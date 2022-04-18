@@ -1,0 +1,37 @@
+<!-- Get URL -->
+<script>
+    // Get variable 
+    var crrLocation = window.location.pathname.replace(".html", "").replace("/", "");
+    var NavMenu = document.getElementById(crrLocation == "" || crrLocation == "index" ? "AboutMe" : crrLocation);
+
+    // set active class
+    NavMenu.className = NavMenu.className.replace(NavMenu.className, (NavMenu.className + " NAV-MENU-ACTIVE"));
+</script>
+
+<!-- Render Menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/wwwroot/img/SomChai.jpg" alt="" width="30" height="35" class="d-inline-block"> $uradet
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNAVBar" aria-controls="MenuNAVBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="MenuNAVBar">
+            <ul id="NAVMenuList" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li id="AboutMe" class="nav-item">
+                    <a class="nav-link" href="/index.html">ABOUT ME</a>
+                </li>
+                <li id="MySkill" class="nav-item">
+                    <a class="nav-link" href="/MySkill.html">MY SKILL</a>
+                </li>
+                <li id="MyPortfolio" class="nav-item">
+                    <a class="nav-link" href="/MyPortfolio.html">MY PORTFOLIO</a>
+                </li>
+                <li id="ContactMe" class="nav-item">
+                    <a class="nav-link" href="/ContactMe.html">CONTACT ME</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

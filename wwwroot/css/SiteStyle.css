@@ -17,3 +17,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.NAV-MENU-ACTIVE {
+    background-color: red !important;
+}
