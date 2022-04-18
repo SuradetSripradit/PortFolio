@@ -1,0 +1,19 @@
+body {
+    min-height: 100%;
+}
+
+.SPD-Top-Section {
+    background-color: aqua !important;
+    height: 100%;
+}
+
+.SPD-Full-BG-Style {
+    /* BG path */
+    /* background-image: url("/wwwroot/img/BG.jpg"); */
+    /* BG property */
+    padding-top: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
