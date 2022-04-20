@@ -1,6 +1,6 @@
 body {
     min-height: 100%;
-    background-color: #ABDFF1;
+    background-color: rgba(171, 223, 241, 0.3);
 }
 
 
@@ -33,17 +33,23 @@ body {
     color: #0C4A60 !important;
 }
 
-.Section-about {
-    background-color: rgba(225, 221, 219, 0.3);
-}
-
 .About-Master-Style {
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
+.Card-Content-Top {
+    margin-bottom: 15px;
+}
+
+.Card-Content-Bottom {
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
 .Footer-Section {
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -69,4 +75,17 @@ body {
 #MainMenuStyle {
     background-color: #0C4A60 !important;
     color: #E1DDDB !important;
+}
+
+@media screen and (max-width: 1080px) {
+    .Card-Content-Top,
+    .Card-Content-Bottom {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .About-Master-Style {
+        padding-top: 15px;
+        /* padding-bottom: 50px; */
+        text-align: center;
+    }
 }
