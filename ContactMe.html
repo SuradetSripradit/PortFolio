@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="/wwwroot/css/PageLoad.css">
     <script src="/wwwroot/js/PageLoad.js"></script>
 
-    <!-- Custom css -->
+    <!-- Custom css & JS -->
     <link rel="stylesheet" href="/wwwroot/css/SiteStyle.css">
+    <script src="/wwwroot/js/LoadFunctionMenu.js"></script>
 
     <!-- Set Header -->
     <title>Contact me</title>
 </head>
 
 <body>
-
     <!-- Progress bar -->
     <div class='progress' id="progress_div">
         <div class='bar' id='bar1'></div>
@@ -35,11 +35,16 @@
     <!-- web body -->
     <div id="SiteMenu"></div>
 
+    <!-- Content -->
+
+
+    <!-- Footer -->
+    <div id="Footer"></div>
     <script>
-        $(function() {
-            $("#SiteMenu").load("/common/Menu.html");
-        })
+        LoadMenu("#SiteMenu");
+        LoadFooter("#Footer");
     </script>
+
     <!-- Set progress width -->
     <input type="hidden" id="progress_width" value="0">
 </body>

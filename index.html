@@ -8,20 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Css & Js Bootstrap -->
-    <link href="./wwwroot/css/bootstrap.min.css" rel="stylesheet">
-    <script src="./wwwroot/js/bootstrap.bundle.min.js"></script>
-    <script src="./wwwroot/js/jquery.min.js"></script>
+    <link href="/wwwroot/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/wwwroot/js/bootstrap.bundle.min.js"></script>
+    <script src="/wwwroot/js/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/c7ab7d62fe.js" crossorigin="anonymous"></script>
 
     <!-- Css & Js page load progress bar -->
-    <link rel="stylesheet" href="./wwwroot/css/PageLoad.css">
-    <script src="./wwwroot/js/PageLoad.js"></script>
+    <link rel="stylesheet" href="/wwwroot/css/PageLoad.css">
+    <script src="/wwwroot/js/PageLoad.js"></script>
 
-    <!-- Custom css -->
-    <link rel="stylesheet" href="./wwwroot/css/SiteStyle.css">
+    <!-- Custom css & JS -->
+    <link rel="stylesheet" href="/wwwroot/css/SiteStyle.css">
+    <script src="/wwwroot/js/LoadFunctionMenu.js"></script>
 
     <!-- Set Header -->
-    <title>Page Redirect</title>
+    <title>About me</title>
 </head>
 
 <body>
@@ -32,9 +33,26 @@
         <div class='percent' id='percent1'></div>
     </div>
 
-    <!-- Redirect -->
+    <!-- web body -->
+    <div id="SiteMenu"></div>
+
+    <!-- Content -->
+    <section class="Section-about">
+        <div class="container">
+            <div class="About-Master-Style">
+                <h1>About me</h1>
+                <div class="container">
+                    <p>I'm suradet i'm programmer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="Footer"></div>
     <script>
-        window.location.href = '/AboutMe.html';
+        LoadMenu("#SiteMenu");
+        LoadFooter("#Footer");
     </script>
 
     <!-- Set progress width -->
