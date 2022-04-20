@@ -1,23 +1,72 @@
 body {
     min-height: 100%;
+    background-color: #ABDFF1;
 }
 
-.SPD-Top-Section {
-    background-color: aqua !important;
-    height: 100%;
+
+/* Set style with class */
+
+.Font-Menu-Style {
+    color: #E1DDDB !important;
 }
 
-.SPD-Full-BG-Style {
-    /* BG path */
-    /* background-image: url("/wwwroot/img/BG.jpg"); */
-    /* BG property */
-    padding-top: auto;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.Menu-Onover {
+    border-bottom-style: solid;
+    border-bottom-color: #0C4A60;
+    margin-left: 10px;
+}
+
+.Menu-Onover:hover {
+    border-bottom-color: #E1DDDB;
 }
 
 .NAV-MENU-ACTIVE {
-    background-color: red !important;
+    border-bottom-style: solid;
+    border-bottom-color: #ABDFF1;
+    font-weight: bold;
+}
+
+.Hidden-Menu {
+    /* background-color: #EF6C33 !important;
+    color: #E1DDDB !important; */
+    background-color: #E1DDDB !important;
+    color: #0C4A60 !important;
+}
+
+.Section-about {
+    background-color: rgba(225, 221, 219, 0.3);
+}
+
+.About-Master-Style {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.Footer-Section {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0C4A60;
+    color: #E1DDDB;
+    text-align: center;
+}
+
+.Footer-Section-Style {
+    background-color: #0C4A60;
+    color: #E1DDDB;
+    text-align: center;
+}
+
+.Footer-Section-Text {
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+
+/* Set style with ID */
+
+#MainMenuStyle {
+    background-color: #0C4A60 !important;
+    color: #E1DDDB !important;
 }
