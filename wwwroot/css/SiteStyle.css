@@ -32,18 +32,24 @@ body {
 }
 
 .About-Master-Style {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
 }
 
 .Card-Content-Top {
+    margin-top: 50px;
     margin-bottom: 15px;
+    text-align: left;
+    background-color: #ABDFF1;
+    color: #0C4A60;
 }
 
 .Card-Content-Bottom {
     margin-bottom: 15px;
-    margin-top: 30px;
+    margin-top: 10px;
+    background-color: #ABDFF1;
+    color: #0C4A60;
 }
 
 .Footer-Section {
@@ -83,7 +89,6 @@ body {
     }
     .About-Master-Style {
         padding-top: 15px;
-        /* padding-bottom: 50px; */
         text-align: center;
     }
 }
