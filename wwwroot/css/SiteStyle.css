@@ -27,8 +27,6 @@ body {
 }
 
 .Hidden-Menu {
-    /* background-color: #EF6C33 !important;
-    color: #E1DDDB !important; */
     background-color: #E1DDDB !important;
     color: #0C4A60 !important;
 }
@@ -45,7 +43,7 @@ body {
 
 .Card-Content-Bottom {
     margin-bottom: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .Footer-Section {
