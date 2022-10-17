@@ -1,0 +1,116 @@
+/* Normal screen */
+
+/* ===== Custom style ===== */
+.LoadingPageStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.Bf-BackgroundStyle {
+  background-image: radial-gradient(circle , #a6b1f3,#525da5,#121d58);
+  height: 100%;
+  background-attachment: fixed;
+}
+.Bf-ButtonCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.Bf-Img-block {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+.Bf-Img-Fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+.Bf-tabs-style {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* tabs style */
+.nav-tabs .nav-item .nav-link {
+  background-color: rgb(9, 3, 90);
+  color: #FFF;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  background-color: rgb(138, 136, 241);
+  color: black;
+}
+
+.tab-content {
+  border: 1px solid #ffffff;
+  border-top: transparent;
+  padding: 5px;
+}
+
+.tab-content .tab-pane {
+  background-color: #919cda;
+  color: white;
+  height: auto;
+}
+
+/* ===== Other source ===== */
+/* ref : https://gist.github.com/howbizarre/e9e5cc2aa301c1d3ed7f5bf5e82cb1bf */
+.responsive-tabs {
+  padding: 1rem;
+}
+
+.responsive-tabs .nav-tabs {
+  display: none;
+}
+
+/* Mobile screen */
+@media (min-width: 768px) {
+
+/* ===== Custom style ===== */
+.Bf-TextLinkCustom {
+  text-decoration: none;
+  color: white !important;
+}
+/* ===== Other Source ===== */
+
+/* == ref : https://gist.github.com/howbizarre/e9e5cc2aa301c1d3ed7f5bf5e82cb1bf == */
+  .responsive-tabs .nav-tabs {
+    display: flex;
+  }
+
+  .responsive-tabs .card {
+    border: none;
+  }
+
+  .responsive-tabs .card .card-header {
+    display: none;
+  }
+
+  .responsive-tabs .card .collapse {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+
+/* ===== Custom style ===== */
+.Bf-TextLinkCustom {
+  text-decoration: none;
+  color: white !important;
+}
+/* ===== Other Source ===== */
+
+/* == ref : https://gist.github.com/howbizarre/e9e5cc2aa301c1d3ed7f5bf5e82cb1bf == */
+  .responsive-tabs .tab-pane {
+    display: block !important;
+    opacity: 1;
+  }
+}

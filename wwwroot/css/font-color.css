@@ -1,0 +1,41 @@
+.PHP-style {
+    /* color: rgb(219, 14, 14); */
+}
+
+.PHP-Comment {
+    color: gray;
+}
+.PHP-Function-Start , .PHP-Function-Start:hover {
+    /* color: rgb(140, 45, 230); */
+    text-decoration: none;
+}
+
+.PHP-Function-Name , .PHP-Function-Name:hover {
+    /* color: rgb(7, 91, 201); */
+    text-decoration: none;
+}
+
+.PHP-Bucket , .PHP-Bucket:hover {
+    /* color: rgb(235, 235, 64); */
+    text-decoration: none;
+}
+
+.PHP-Declare-Variable , .PHP-Declare-Variable:hover {
+    /* color: rgb(202, 12, 12); */
+    text-decoration: none;
+}
+
+.PHP-echo , .PHP-echo:hover {
+    /* color: rgb(92, 240, 240); */
+    text-decoration: none;
+}
+
+.PHP-Bucket-2 , .PHP-Bucket-2:hover {
+    /* color: rgb(136, 39, 226); */
+    text-decoration: none;
+}
+
+.PHP-String , .PHP-String:hover {
+    /* color: rgb(68, 226, 29); */
+    text-decoration: none;
+}
