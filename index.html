@@ -2,15 +2,290 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <!-- set site information -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- set mobile view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Using css style -->
+  <link rel="stylesheet" href="wwwroot/css/bootstrap.min.css">
+  <link rel="stylesheet" href="wwwroot/css/bf-style.css">
+  <link rel="stylesheet" href="wwwroot/css/font-color.css">
+
+  <!-- Using Js -->
+  <script src="wwwroot/js/bootstrap.bundle.min.js"></script>
+  <script src="wwwroot/js/bf-function.js"></script>
+
+  <!-- Set title -->
+  <title>My profile</title>
 </head>
 
-<body>
-    <h1>Test My Portfolio</h1>
-    <h5> --- This is my Suradet port --- </h5>
+<body class="Bf-BackgroundStyle" onload="BF_LoaderPage()">
+  <div id="Bf-Body">
+
+    <!-- Loading ui -->
+    <div id="LoaderPage" class="LoadingPageStyle">
+      <div class="spinner-grow" style="color: #010b42;"></div>
+      <div class="spinner-grow" style="color: #0a1a77;"></div>
+      <div class="spinner-grow" style="color: #192da0;"></div>
+      <div class="spinner-grow" style="color: #192da0;"></div>
+      <div class="spinner-grow" style="color: #0a1a77;"></div>
+      <div class="spinner-grow" style="color: #010b42;"></div>
+    </div>
+
+    <div id="ContentPage">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="Bf-tabs-style-header container-fluid mt-3 responsive-tabs">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item Bf-tabs-header-style">
+          <a class="nav-link active" data-bs-toggle="tab" href="#introduction" id="M-Introduction"
+            role="tab">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#contact">contact</a>
+        </li>
+      </ul>
+
+      <!-- Menu list and collaps -->
+      <div id="content" class="Bf-tabs-style tab-content" role="tablist">
+
+        <!-- ===== Introduction ===== -->
+        <div id="introduction" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="M-Introduction">
+          <div class="card-header" role="tab" id="heading-introduction">
+            <h5 class="mb-0">
+              <a class="Bf-TextLinkCustom" data-bs-toggle="collapse" href="#Collaps-Introduction" aria-expanded="true"
+                aria-controls="Collaps-Introduction">
+                Introduction
+              </a>
+            </h5>
+          </div>
+          <div id="Collaps-Introduction" class="collapse show" data-bs-parent="#content" role="tabpanel"
+            aria-labelledby="heading-introduction">
+            <div class="card-body">
+              <div style="font-weight: bold;">
+
+                <p>&lt;?php</p>
+
+                <!-- Create function -->
+                <p>&emsp; function RenderIntroduction() {</p>
+                <br>
+                <p>&emsp;&emsp; $Profile = array(</p>
+                <p>&emsp;&emsp;&emsp; "Name" => "Suradet Sripradit" ,</p>
+                <p>&emsp;&emsp;&emsp; "NickName" => "I-Yub" ,</p>
+                <p>&emsp;&emsp;&emsp; "Experience" => array("Data engineering" , "2017" , "present") ,</p>
+                <p>&emsp;&emsp;&emsp; "BirthDay" => "1998-08-06" ,</p>
+                <p>&emsp;&emsp;&emsp; "Age" => "24" ,</p>
+                <p>&emsp;&emsp;&emsp; "Motto" => "Try to do the best thing." ,</p>
+                <p>&emsp;&emsp; );</p>
+
+                <p>&emsp;&emsp; echo RenderProfile($Profile["Name"]);</p>
+                <p>&emsp;&emsp; foreach ($Profile as $pf => $pf_value) {</p>
+
+                <p>&emsp;&emsp;&emsp; echo $pf + " : " + $pf_value;</p>
+
+                <p>&emsp;&emsp; }</p>
+                <p>&emsp; }</p>
+
+                <p>?></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Skills ===== -->
+        <div id="skills" class="card tab-pane fade" role="tabpanel" aria-labelledby="M-skills">
+          <div class="card-header" role="tab" id="heading-skills">
+            <h5 class="mb-0">
+              <a class="Bf-TextLinkCustom" data-bs-toggle="collapse" href="#Collaps-skills" aria-expanded="true"
+                aria-controls="Collaps-skills">
+                Skills
+              </a>
+            </h5>
+          </div>
+          <div id="Collaps-skills" class="collapse" data-bs-parent="#content" role="tabpanel"
+            aria-labelledby="heading-skills">
+            <div class="card-body">
+              <div style="font-weight: bold;">
+                <p>&lt;? php</p>
+
+                <p>&emsp; function RenderSkill() {</p>
+                <br>
+                <p>&emsp;&emsp; $Skills = array(</p>
+                <p>&emsp;&emsp;&emsp; "SQL" => "5" ,</p>
+                <p>&emsp;&emsp;&emsp; "HTML" => "5" ,</p>
+                <p>&emsp;&emsp;&emsp; "Python" => "4" ,</p>
+                <p>&emsp;&emsp;&emsp; "C#" => "4" ,</p>
+                <p>&emsp;&emsp;&emsp; "PHP" => "4" ,</p>
+                <p>&emsp;&emsp;&emsp; "CSS" => "4" ,</p>
+                <p>&emsp;&emsp;&emsp; "JavaScript" => "4" ,</p>
+                <p>&emsp;&emsp; );</p>
+
+                <p>&emsp;&emsp; foreach ($Skills as $sk => $sk_point) {</p>
+
+                <p>&emsp;&emsp;&emsp; echo $sk + " : " + $sk_point;</p>
+
+                <p>&emsp;&emsp; }</p>
+                <p>&emsp; }</p>
+
+                <p>?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Projects ===== -->
+        <div id="projects" class="card tab-pane fade" role="tabpanel" aria-labelledby="M-projects">
+          <div class="card-header" role="tab" id="heading-projects">
+            <h5 class="mb-0">
+              <a class="Bf-TextLinkCustom" data-bs-toggle="collapse" href="#Collaps-projects" aria-expanded="true"
+                aria-controls="Collaps-projects">
+                Projects
+              </a>
+            </h5>
+          </div>
+          <div id="Collaps-projects" class="collapse" data-bs-parent="#content" role="tabpanel"
+            aria-labelledby="heading-projects">
+            <div class="card-body">
+              <div style="font-weight: bold;">
+                <p>&lt;? php</p>
+
+                <p>&emsp; function RenderContact() {</p>
+                <br>
+                <p>&emsp;&emsp; $Projects = array(</p>
+                <p>&emsp;&emsp;&emsp; "Portfolio" => "https://suradet-spd.github.io/Portfolio/" ,</p>
+                <p>&emsp;&emsp;&emsp; "About-Me" => "https://github.com/suradet-spd/About-Me" ,</p>
+                <p>&emsp;&emsp;&emsp; "Rus-Project" => "https://github.com/suradet-spd/Rus-Project" ,</p>
+                <p>&emsp;&emsp; );</p>
+
+                <p>&emsp;&emsp; foreach ($Projects as $pj => $pj_link) {</p>
+
+                <p>&emsp;&emsp;&emsp; echo $pj + " : " + $pj_link;</p>
+
+                <p>&emsp;&emsp; }</p>
+                <p>&emsp; }</p>
+
+                <p>?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Contact ===== -->
+        <div id="contact" class="card tab-pane fade" role="tabpanel" aria-labelledby="M-contact">
+          <div class="card-header" role="tab" id="heading-contact">
+            <h5 class="mb-0">
+              <a class="Bf-TextLinkCustom" data-bs-toggle="collapse" href="#Collaps-contact" aria-expanded="true"
+                aria-controls="Collaps-contact">
+                Contact
+              </a>
+            </h5>
+          </div>
+          <div id="Collaps-contact" class="collapse" data-bs-parent="#content" role="tabpanel"
+            aria-labelledby="heading-contact">
+            <div class="card-body">
+              <div style="font-weight: bold;">
+                <p>&lt;? php</p>
+
+                <p>&emsp; function RenderContact() {</p>
+                <br>
+                <p>&emsp;&emsp; $Contact = array(</p>
+                <p>&emsp;&emsp;&emsp; "Email" => "suradet.spd@outlook.com" ,</p>
+                <p>&emsp;&emsp;&emsp; "Github" => "https://github.com/suradet-spd" ,</p>
+                <p>&emsp;&emsp;&emsp; "Linkedin" => "https://www.linkedin.com/in/suradet-sripradit-539a57192/" ,</p>
+                <p>&emsp;&emsp; );</p>
+
+                <p>&emsp;&emsp; foreach ($Contacts as $ct => $ct_addr) {</p>
+
+                <p>&emsp;&emsp;&emsp; echo $ct + " : " + $ct_addr;</p>
+
+                <p>&emsp;&emsp; }</p>
+                <p>&emsp; }</p>
+
+                <p>?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="Bf-ButtonCenter">
+        <button class="btn btn-outline-light" onclick="BF_ExecuteCode()">Execute</button>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- After Execute -->
+    <div id="ExecuteResult" style="display: none;">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+
+
+
+
+
 </body>
 
 </html>
