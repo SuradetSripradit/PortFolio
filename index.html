@@ -17,9 +17,14 @@
   <!-- Using Js -->
   <script src="wwwroot/js/bootstrap.bundle.min.js"></script>
   <script src="wwwroot/js/bf-function.js"></script>
+  <script src="https://kit.fontawesome.com/c7ab7d62fe.js" crossorigin="anonymous"></script>
 
   <!-- Set title -->
   <title>My profile</title>
+
+  <!-- Credit -->
+  <!-- Profile template -->
+  <!-- https://www.bootdey.com/snippets/view/profile-with-data-and-skills -->
 </head>
 
 <body class="Bf-BackgroundStyle" onload="BF_LoaderPage()">
@@ -35,33 +40,38 @@
       <div class="spinner-grow" style="color: #010b42;"></div>
     </div>
 
+    <!-- Before Execute -->
     <div id="ContentPage">
+
+      <!-- Menu Before Execute -->
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <a class="navbar-brand" href="/index.html">$uradet</a>
           <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
+              <!-- <li class="nav-item">
+                <a class="nav-link active" href="javascript:void(0)">PHP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
+                <a class="nav-link" href="javascript:void(0)">Python</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
+                <a class="nav-link" href="javascript:void(0)">C#</a>
+              </li> -->
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-            </form>
+            <!-- <div class="d-flex">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a href="#md_ChangeLang" class="nav-link" style="color: white;">Change language</a>
+                </li>
+              </ul>
+            </div> -->
+
           </div>
         </div>
       </nav>
     
+    <!-- Code PHP Snytax -->
     <div class="Bf-tabs-style-header container-fluid mt-3 responsive-tabs">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
@@ -76,7 +86,7 @@
           <a class="nav-link" data-bs-toggle="tab" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" href="#contact">contact</a>
+          <a class="nav-link" data-bs-toggle="tab" href="#contact">Contact</a>
         </li>
       </ul>
 
@@ -226,7 +236,7 @@
                 <p>&emsp;&emsp; $Contact = array(</p>
                 <p>&emsp;&emsp;&emsp; "Email" => "suradet.spd@outlook.com" ,</p>
                 <p>&emsp;&emsp;&emsp; "Github" => "https://github.com/suradet-spd" ,</p>
-                <p>&emsp;&emsp;&emsp; "Linkedin" => "https://www.linkedin.com/in/suradet-sripradit-539a57192/" ,</p>
+                <p>&emsp;&emsp;&emsp; "Linkedin" => "https://www.linkedin.com/in/suradet-spd/" ,</p>
                 <p>&emsp;&emsp; );</p>
 
                 <p>&emsp;&emsp; foreach ($Contacts as $ct => $ct_addr) {</p>
@@ -248,41 +258,286 @@
       </div>
 
     </div>
+
   </div>
 
     <!-- After Execute -->
     <div id="ExecuteResult" style="display: none;">
+      
+      <!-- Menu After Execute -->
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <a class="navbar-brand" href="/index.html">$uradet</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-            </form>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
+
+      <!-- Introducton Page -->
+      <div class="container">
+          <div class="main-body" style="padding-top: 30px;">
+          
+                <div class="row gutters-sm">
+
+                  <!-- First column -->
+                  <div class="col-md-4 mb-3">
+
+                    <!-- Intrroduction -->
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                          <img src="/wwwroot/img/Profile.jpg" alt="$suradet" class="rounded-circle" width="150">
+                          <div class="mt-3">
+                            <h4>Suradet Sripradit</h4>
+                            <p class="text-secondary mb-1">Data engineer</p>
+                            <p class="text-muted font-size-sm">Securities and Exchange Commission, Thailand</p>
+                            <button class="btn btn-outline-primary" onclick="OtherSite('Linkedin')">More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Contact me -->
+                    <div class="card mt-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">
+                            <i class="fa-brands fa-chrome fa-xl"></i> Website</h6>
+                          <span class="text-secondary">
+                            <p class="Bf-Custom-Text-Link" onclick="OtherSite('GithubRepo')" target="_blank">Port profile</p>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0"><i class="fa-brands fa-github fa-xl"></i> Github</h6>
+                          <span class="text-secondary">
+                            <p class="Bf-Custom-Text-Link" onclick="OtherSite('GitHub')" target="_blank">
+                              suradet-spd
+                            </p>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">
+                            <i class="fa-brands fa-instagram fa-xl"></i> Instagram</h6>
+                          <span class="text-secondary">
+                            <p class="Bf-Custom-Text-Link" onclick="OtherSite('Instragram')" target="_blank">I-yub Suradet</p>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">
+                            <i class="fa-brands fa-facebook fa-xl"></i> Facebook</h6>
+                            <span class="text-secondary">
+                              <p class="Bf-Custom-Text-Link" onclick="OtherSite('Facebook')" target="_blank">I-yub Suradet</p>
+                            </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">
+                            <i class="fa-solid fa-envelope fa-xl"></i> E-mail
+                          </h6>
+                          <span class="text-secondary">
+                            <p class="Bf-Custom-Text-Link" onclick="OtherSite('Email1')" target="_blank">
+                              suradet.spd@outlook.com
+                            </p>
+                            <p class="Bf-Custom-Text-Link" onclick="OtherSite('Email2')" target="_blank">
+                              suradet.spd@gmail.com
+                            </p>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <!-- Second column -->
+                  <div class="col-md-8">
+                    
+                    <!-- About me detail -->
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        
+                        <!-- full name -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Full Name</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            Suradet Sripradit (I-Yub)
+                          </div>
+                        </div>
+                        <hr>
+
+                        <!-- education -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Education</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            <p style="font-style: bold;">
+                              <strong>Bachelor Degrees</strong> <br>
+                              Rajamangala University of Technology Suvarnabhumi <br>
+                              Information Technology (IT) <br>
+                            </p>
+                            <p class="text-secondary"></p>
+                          </div>
+                        </div>
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Email</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            <p style="font-style: bold;">
+                              Suradet.spd@outlook.com <br>
+                              suradet.spd@gmail.com
+                            </p>
+                            <p class="text-secondary"></p>
+                          </div>
+                        </div>
+                        <hr>
+
+                        <!-- Mobile Phone -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Phone</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            <p style="font-style: bold;">
+                              095-845-3939
+                            </p>
+                            <p class="text-secondary"></p>
+                          </div>
+                        </div>
+                        <hr>
+
+                        <!-- Address -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Address</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            <p style="font-style: bold;">
+                              Bangkok, Thailand
+                            </p>
+                            <p class="text-secondary"></p>
+                          </div>
+                        </div>
+                        <hr>
+
+                        <!-- About me -->
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">About me</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            <p style="font-style: bold;">
+                              With 4 years of experience in Data engineer from SEC
+                              Thailand. Graduate with Bachelor degree in information
+                              technology from Rajamangala University of Technology
+                              Suvarnabhumi. I'm interested in Web developer or
+                              Programmer.
+
+                            </p>
+                            <p class="text-secondary"></p>
+                          </div>
+                        </div>
+                        <hr>
+
+                      </div>
+                    </div>
+      
+                    <!-- Split column -->
+                    <div class="row gutters-sm">
+                      
+                      <!-- Skills -->
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3">
+                              Skills
+                            </h6> 
+
+                            <small>SQL</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <small>PHP & C#</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <small>Python</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <small>Javascript & CSS</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Tools & software -->
+                      <div class="col-sm-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3">
+                              Tools & software
+                            </h6>
+
+                            <small>Azure Data Factory</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <small>SQL Server tools [SSIS , SSRS]</small> <br>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <small>Database architecture</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <small>Azure API Management</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+      
+              </div>
+          </div>
+          
+      </div>
     </div>
 
-  </div>
 
-
-
+<!-- Modal Zone -->
+<!-- Coming soon -->
 
 
 

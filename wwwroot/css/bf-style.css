@@ -61,6 +61,17 @@
   height: auto;
 }
 
+.Bf-Custom-Text-Link {
+  text-decoration: none;
+  color: #838282 !important;
+  cursor: pointer;
+}
+
+.Bf-Custom-Text-Link:hover {
+  text-decoration: underline;
+  
+}
+
 /* ===== Other source ===== */
 /* ref : https://gist.github.com/howbizarre/e9e5cc2aa301c1d3ed7f5bf5e82cb1bf */
 .responsive-tabs {
